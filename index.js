@@ -1,28 +1,27 @@
 const express = require('express');
-// const router = express.Router();
-const route = require('./controllers/route');
-
-// const express = require('express');
 const bodyParser = require('body-parser');
-// const blogRoutes = require('./views/index');
 
 const app = express();
 const PORT = 6000;
-const router = app.router();
 
 app.use(bodyParser.json());
-router.get('/', route.getAllPosts);
-router.get('/:postid', route.getPostById);
-router.post('/', route.createPost);
 
-// app.use('/', blogRoutes);
+const route = {
+  getAllPosts: (req, res) => {
+    res.send('Get all posts');
+  },
+  getPostById: (req, res) => {
+    res.send(`Get post with ID: ${req.params.postid}`);
+  },
+  createPost: (req, res) => {
+    res.send('Create a new post');
+  }
+};
 
+app.get('/', route.getAllPosts);
+app.get('/:postid', route.getPostById);
+app.post('/', route.createPost);
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-
-
-
-
-// module.exports = router;

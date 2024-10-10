@@ -42,7 +42,7 @@ const createPostTable = () => {
     return true
   } else {
 
-    const sql = 'CREATE TABLE posts (id INTEGER PRIMARY KEY AUTOINCREMENT. title varchar(250), content varchar(250))';
+    const sql = 'CREATE TABLE posts (id INTEGER PRIMARY KEY AUTOINCREMENT, title varchar(250), content varchar(250))';
     const runcommand = b.run(sql)
     if (!runcommand) {
       return false;
