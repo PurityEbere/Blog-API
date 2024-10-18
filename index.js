@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 require('dotenv').config()
 
-const { initDb } = require('./database/initdb')
+const { initDb } = require('./database/blogdb')
 const postRouter = require('./views/post')
 
 const app = express();
