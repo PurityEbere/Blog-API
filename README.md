@@ -11,10 +11,13 @@ Set up this project by cloning the repository and installing the required depend
 
 1. Clone the repository:    
 
->`git clone https://github.com/yourusername/blog-api-service.git`  
+>```sh
+>git clone https://github.com/yourusername/blog-api-service.git```  
 
 
-`cd blog-api-service`    
+```sh
+cd blog-api-service
+```    
 
 
 2. Install the dependencies: Run the following command to install the necessary packages, including `express and sqlite3:
@@ -26,9 +29,22 @@ Set up this project by cloning the repository and installing the required depend
 You can run the app directly without any build process.   
 Simply use the following command:
 
-`node app.js`   
+```sh
+node app.js```    
 
-If you start the app with the default settings, it will run on any selected port of your choice (eg.port: 3000) and set up an SQLite database in the `/database` folder called `blog.db`.   
+
+
+
+
+
+
+
+
+
+
+
+If you start the app with the default settings, it will run on any selected port of your choice (eg.port: 3000) and set up an SQLite database in the `/database` folder called
+`blog.db`.   
 The server will be accessible at http://localhost:3000.  
 
 ## Running Unit Tests  
@@ -59,9 +75,9 @@ Response json:
     "id": 1,   
     "title": "Learning again",  
     "content": "Purity is !"      
-  },    
+  },   
   
-  {
+  `{
     "id": 2,    
     "title": "Trying again",  
     "content": "Try again till it works."  
@@ -99,7 +115,7 @@ Response (json):
 
 
 
-## Future Update  
+## Next Update  
 1. Add functionality to update and delete blog posts.  
 2. add functionality to post comment, getAllCommentById, delete comment  
 3. Implement validation for data to ensure title and content are provided.  
