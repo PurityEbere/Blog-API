@@ -11,9 +11,8 @@ Set up this project by cloning the repository and installing the required depend
 
 1. Clone the repository:    
 
->```sh
->git clone https://github.com/yourusername/blog-api-service.git  
-
+```sh
+git clone https://github.com/yourusername/blog-api-service.git  
 cd blog-api-service
 ```    
 
@@ -22,7 +21,8 @@ cd blog-api-service
 
 ```sh
 npm install express
-```  
+```
+
 ```sh
 npm install squlite3
 ```
