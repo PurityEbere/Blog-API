@@ -12,10 +12,8 @@ Set up this project by cloning the repository and installing the required depend
 1. Clone the repository:    
 
 >```sh
->git clone https://github.com/yourusername/blog-api-service.git```  
+>git clone https://github.com/yourusername/blog-api-service.git  
 
-
-```sh
 cd blog-api-service
 ```    
 
