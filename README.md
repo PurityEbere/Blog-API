@@ -115,6 +115,7 @@ Response (json):
 ```sh
 {   
   "message": "You've created a new blog post successfully"
+}
 ```   
 
 
